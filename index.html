@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرهنگ لغات دری - مکاتب افغان ترک پسرانه شبرغان</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header-banner">
+        <div class="logo-area">
+            <img src="logo.png" alt="لوگوی افغان ترک شبرغان" class="school-logo">
+            <div>
+                <h1>فرهنگ لغات دری</h1>
+                <p class="subtitle">مکاتب افغان ترک پسرانه شبرغان • دیپارتمنت زبان و ادبیات دری</p>
+            </div>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+            <button id="darkModeToggle" class="icon-btn">🌙 حالت شب</button>
+        </div>
+    </div>
+
+    <!-- Word Of The Day -->
+    <div id="wordOfTheDay" class="wotd-card"></div>
+
+    <!-- Tabs -->
+    <div class="nav-tabs">
+        <button class="tab-btn active" data-tab="dictionary">📖 فرهنگ لغت</button>
+        <button class="tab-btn" data-tab="bookmarks">❤️ علاقه‌مندی‌ها</button>
+        <button class="tab-btn" data-tab="quiz">🧠 آزمون چهارگزینه‌ای</button>
+        <button class="tab-btn" data-tab="writeExam">✍️ امتحان کتبی (نوشتن معنی)</button>
+        <button class="tab-btn" data-tab="flashcards">🃏 فلش کارت</button>
+        <button class="tab-btn" data-tab="match">🎮 بازی جفت‌سازی</button>
+        <button class="tab-btn" data-tab="speedgame">⚡ مسابقه سرعت</button>
+        <button class="tab-btn" data-tab="ai">🤖 هوش مصنوعی دری</button>
+        <button class="tab-btn" data-tab="custom">➕ افزودن واژه</button>
+        <button class="tab-btn" data-tab="progress">📊 پیشرفت</button>
+        <button class="tab-btn" data-tab="random">🎲 واژه تصادفی</button>
+    </div>
+
+    <!-- Search -->
+    <input id="searchInput" class="search-box" type="text" placeholder="جستجوی واژه یا معنی...">
+
+    <!-- Alphabet Bar -->
+    <div id="alphabetBar" class="alphabet-bar">
+        <button class="alpha-btn active" data-letter="all">همه</button>
+        <button class="alpha-btn" data-letter="آ">آ</button>
+        <button class="alpha-btn" data-letter="ا">ا</button>
+        <button class="alpha-btn" data-letter="ب">ب</button>
+        <button class="alpha-btn" data-letter="پ">پ</button>
+        <button class="alpha-btn" data-letter="ت">ت</button>
+        <button class="alpha-btn" data-letter="ث">ث</button>
+        <button class="alpha-btn" data-letter="ج">ج</button>
+        <button class="alpha-btn" data-letter="چ">چ</button>
+        <button class="alpha-btn" data-letter="ح">ح</button>
+        <button class="alpha-btn" data-letter="خ">خ</button>
+        <button class="alpha-btn" data-letter="د">د</button>
+        <button class="alpha-btn" data-letter="ذ">ذ</button>
+        <button class="alpha-btn" data-letter="ر">ر</button>
+        <button class="alpha-btn" data-letter="ز">ز</button>
+        <button class="alpha-btn" data-letter="ژ">ژ</button>
+        <button class="alpha-btn" data-letter="س">س</button>
+        <button class="alpha-btn" data-letter="ش">ش</button>
+        <button class="alpha-btn" data-letter="ص">ص</button>
+        <button class="alpha-btn" data-letter="ض">ض</button>
+        <button class="alpha-btn" data-letter="ط">ط</button>
+        <button class="alpha-btn" data-letter="ظ">ظ</button>
+        <button class="alpha-btn" data-letter="ع">ع</button>
+        <button class="alpha-btn" data-letter="غ">غ</button>
+        <button class="alpha-btn" data-letter="ف">ف</button>
+        <button class="alpha-btn" data-letter="ق">ق</button>
+        <button class="alpha-btn" data-letter="ک">ک</button>
+        <button class="alpha-btn" data-letter="گ">گ</button>
+        <button class="alpha-btn" data-letter="ل">ل</button>
+        <button class="alpha-btn" data-letter="م">م</button>
+        <button class="alpha-btn" data-letter="ن">ن</button>
+        <button class="alpha-btn" data-letter="و">و</button>
+        <button class="alpha-btn" data-letter="ه">ه</button>
+        <button class="alpha-btn" data-letter="ی">ی</button>
+    </div>
+
+    <!-- Grade Filter -->
+    <div id="filterContainer" class="filter-container">
+        <button class="filter-btn active" data-grade="all">همه صنوف</button>
+        <button class="filter-btn" data-grade="7">صنف ۷</button>
+        <button class="filter-btn" data-grade="8">صنف ۸</button>
+        <button class="filter-btn" data-grade="9">صنف ۹</button>
+        <button class="filter-btn" data-grade="10">صنف ۱۰</button>
+        <button class="filter-btn" data-grade="11">صنف ۱۱</button>
+        <button class="filter-btn" data-grade="12">صنف ۱۲</button>
+    </div>
+
+    <!-- Stats -->
+    <div id="stats" class="stats"></div>
+
+    <!-- Main Content -->
+    <div id="wordList" class="word-list"></div>
+
+</div>
+
+<script src="vocabulary.js"></script>
+<script src="features.js"></script>
+
+</body>
+</html>
