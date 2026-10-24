@@ -1,0 +1,24 @@
+{
+  "name": "فرهنگ لغات دری - مکاتب افغان ترک",
+  "short_name": "فرهنگ دری",
+  "description": "فرهنگ لغات تخصصی زبان و ادبیات دری مکاتب افغان ترک پسرانه شبرغان",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#022047",
+  "theme_color": "#0c386d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
